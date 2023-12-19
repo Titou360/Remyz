@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "title": "Tonte de pelouse",
+      "cover": "/assets/img/Features/tonte.jpg",
+      "description": "Service de tonte de pelouse pour maintenir un gazon bien entretenu.",
+      "info": ""
+    },
+    {
+      "title": "Taillage de haies",
+      "cover": "/assets/img/Features/haie.jpg",
+      "description": "Service de taillage professionnel des haies pour créer des bordures nettes et attrayantes.",
+      "info": ""
+    },
+    {
+      "title": "Entretien des parterres de fleurs",
+      "cover": "/assets/img/Features/parterre.jpg",
+      "description": "Service d'entretien des parterres de fleurs pour une apparence florale continue et soignée.",
+      "info": ""
+    },
+    {
+      "title": "Désherbage",
+      "cover": "/assets/img/Features/desherbage.webp",
+      "description": "Service de désherbage pour éliminer les mauvaises herbes et maintenir un jardin propre.",
+      "info": ""
+    },
+    {
+      "title": "Plantation de nouveaux végétaux",
+      "cover": "/assets/img/Features/plantation.jpg",
+      "description": "Service de plantation de nouveaux végétaux pour renouveler et embellir votre jardin.",
+      "info": ""
+    }
+  ]
+}
