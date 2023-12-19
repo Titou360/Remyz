@@ -29,6 +29,24 @@
       "cover": "/assets/img/Features/plantation.jpg",
       "description": "Service de plantation de nouveaux végétaux pour renouveler et embellir votre jardin.",
       "info": ""
+    },
+    {
+      "title": "Aménagement",
+      "cover": "/assets/img/Features/amenagement.jpg",
+      "description": "Aménagement paysager de vos espaces",
+      "info": ""
+    },
+    {
+      "title": "Nettoyage",
+      "cover": "/assets/img/Features/feuilles.jpg",
+      "description": "Ramassage et évacutaions de vos déchets végétaux",
+      "info": ""
+    },
+    {
+      "title": "Tout autre service...",
+      "cover": "/assets/img/Features/autre.jpg",
+      "description": "Questionnez moi selon vos besoins, je vous répondrai",
+      "info": ""
     }
   ]
 }

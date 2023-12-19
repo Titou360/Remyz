@@ -4,11 +4,14 @@ import FeaturesCards from './FeaturesCards';
 
 const Features = () => {
   return (
-    <div className="w-full m-auto grid grid-cols-3 gap-4 justify-center items-center h-screen">
-      {data.services.map((service, index) => (
-        <FeaturesCards key={index} data={service} />
-      ))}
-    </div>
+    <section id="services">
+      <h2 className="text-3xl text-primary capitalize text-center my-4">Mes services</h2>
+      <div className="w-full grid grid-cols-3 gap-4 justify-items-center">
+        {data.services.map((service, index) => (
+          <FeaturesCards key={index} data={service} />
+        ))}
+      </div>
+    </section>
   );
 };
 

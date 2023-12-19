@@ -15,7 +15,7 @@ const FeaturesCards = ({ data }) => {
           <div className='flex min-h-full flex-col items-center justify-center gap-4'>
             <h2 className="text-3xl font-bold text-light">{title}</h2>
             <p className="text-lg">{description}</p>
-            <button className="mt-2 rounded-md bg-light text-dark py-2 px-4 text-sm hover:bg-dark hover:text-light">Lire plus</button>
+            <button className="mt-2 rounded-md bg-light border-2 border-transparent hover:border-light text-dark py-2 px-4 text-sm hover:bg-dark hover:text-light">Lire plus</button>
           </div>
         </div>
       </div>
