@@ -4,49 +4,111 @@
       "title": "Tonte de pelouse",
       "cover": "/assets/img/Features/tonte.jpg",
       "description": "Service de tonte de pelouse pour maintenir un gazon bien entretenu.",
-      "info": ""
+      "info": [
+        "1. Préparation du terrain",
+        "2. Réglage du hauteur de coupe",
+        "3. Tonte",
+        "4. Collecte des résidus de coupe",
+        "5. Bordures et finitions",
+        "6. Inspection finale"
+      ]
     },
     {
       "title": "Taillage de haies",
       "cover": "/assets/img/Features/haie.jpg",
       "description": "Service de taillage professionnel des haies pour créer des bordures nettes et attrayantes.",
-      "info": ""
+      "info": [
+        "1. Évaluation de l'état des haies",
+        "2. Préparation des outils de taillage",
+        "3. Taille principale des haies",
+        "4. Nettoyage des débris",
+        "5. Façonnage final des haies",
+        "6. Inspection finale"
+      ]
     },
     {
       "title": "Entretien des parterres de fleurs",
       "cover": "/assets/img/Features/parterre.jpg",
       "description": "Service d'entretien des parterres de fleurs pour une apparence florale continue et soignée.",
-      "info": ""
+      "info": [
+        "1. Évaluation de l'état des parterres",
+        "2. Désherbage minutieux",
+        "3. Enrichissement du sol et fertilisation",
+        "4. Taille des plantes nécessaires",
+        "5. Arrosage approprié",
+        "6. Application de paillis",
+        "7. Inspection finale"
+      ]
     },
     {
       "title": "Désherbage",
       "cover": "/assets/img/Features/desherbage.webp",
       "description": "Service de désherbage pour éliminer les mauvaises herbes et maintenir un jardin propre.",
-      "info": ""
+      "info": [
+        "1. Évaluation de l'étendue du désherbage",
+        "2. Identification des types de mauvaises herbes",
+        "3. Choix des méthodes de désherbage appropriées",
+        "4. Désherbage manuel et/ou mécanique",
+        "5. Application de produits de désherbage si nécessaire",
+        "6. Élimination des débris de désherbage",
+        "7. Inspection finale"
+      ]
     },
     {
       "title": "Plantation de nouveaux végétaux",
       "cover": "/assets/img/Features/plantation.jpg",
       "description": "Service de plantation de nouveaux végétaux pour renouveler et embellir votre jardin.",
-      "info": ""
+      "info": [
+        "1. Évaluation de l'emplacement et des conditions du sol",
+        "2. Sélection des végétaux appropriés",
+        "3. Préparation du sol",
+        "4. Plantation selon les recommandations spécifiques de chaque plante",
+        "5. Arrosage initial et application de fertilisant",
+        "6. Protection contre les ravageurs et les maladies",
+        "7. Conseils d'entretien futur"
+      ]
     },
     {
       "title": "Aménagement",
       "cover": "/assets/img/Features/amenagement.jpg",
       "description": "Aménagement paysager de vos espaces",
-      "info": ""
+      "info": [
+        "1. Consultation initiale avec le client",
+        "2. Conception personnalisée du plan d'aménagement",
+        "3. Sélection de plantes et matériaux adaptés",
+        "4. Préparation du sol et installation de l'aménagement",
+        "5. Création de chemins et zones de loisirs",
+        "6. Installation d'éclairage extérieur si nécessaire",
+        "7. Entretien et conseils pour la préservation à long terme"
+      ]
     },
     {
       "title": "Nettoyage",
       "cover": "/assets/img/Features/feuilles.jpg",
       "description": "Ramassage et évacutaions de vos déchets végétaux",
-      "info": ""
+      "info": [
+        "1. Élimination des débris et feuilles mortes",
+        "2. Taille des plantes nécessaires",
+        "3. Ramassage des déchets verts",
+        "4. Désherbage des zones nécessaires",
+        "5. Nettoyage des surfaces dures (allées, terrasses, etc.)",
+        "6. Collecte et élimination des déchets",
+        "7. Inspection finale"
+      ]
     },
     {
       "title": "Tout autre service...",
       "cover": "/assets/img/Features/autre.jpg",
       "description": "Questionnez moi selon vos besoins, je vous répondrai",
-      "info": ""
+      "info": [
+        "1. Contactez-moi par le formulaire ou par téléphone",
+        "2. Convenons d'un rendez-vous physique",
+        "3. Je reste à votre écoute",
+        "4. Proposition tarifaire (devis)",
+        "5. Execution du contrat",
+        "6. Collecte et élimination des déchets",
+        "7. Inspection finale"
+      ]
     }
   ]
 }

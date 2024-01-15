@@ -1,6 +1,6 @@
 import React from 'react'
 
-const partner = () => {
+const Partners = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const partner = () => {
   )
 }
 
-export default partner
+export default Partners
