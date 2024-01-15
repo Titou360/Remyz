@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import Opinions from '@/components/Opinions'
 import Resume from '@/components/Resume'
 import Xp from '@/components/Xp'
+import Partners from '@/components/Partners'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <Xp />
       <Opinions />
+      <Partners />
       <Catchment />
     </main>
   );

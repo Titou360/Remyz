@@ -4,9 +4,9 @@ import AnimatedNumber from './AnimatedNumber';
 const Xp = () => {
   return (
     <section id="experience" className="mt-10">
-      <h2 className="text-3xl text-primary capitalize text-center my-4">Mon expérience</h2>
+      <h2 className="text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">Mon expérience</h2>
 
-      <div className="grid grid-cols-3 justify-center items-center">
+      <div className="grid grid-cols-3 xs:grid-cols-1 xs:gap-4 justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <span className="inline-block normal-case text-7xl font-bold text-primary/80">
             <AnimatedNumber toNumber={4} />

@@ -110,5 +110,20 @@
         "7. Inspection finale"
       ]
     }
+  ],
+
+  "partners": [
+    {
+      "name": "Nemo Solutions",
+      "cover": "/assets/img/Partners/nemo.jpg",
+      "description": "Solution digiale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet",
+      "type": "informatique"
+    },
+    {
+      "name": "Nemo Solutions",
+      "cover": "/assets/img/Partners/nemo.jpg",
+      "description": "Solution digiale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet",
+      "type": "informatique"
+    }
   ]
 }

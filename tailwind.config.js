@@ -5,20 +5,22 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mont: ['var(--font-mont)']
+        mont: ['var(--font-mont)'],
+        Spring: ['Spring', 'sans']
       },
       colors: {
         dark: '#161616',
         light: '#f2f2f2',
         primary: '#0c4012',
-        darky: '#1F2937'
+        darky: '#1F2937',
+        darkModePrimary: '#00796B'
       },
       rotate: {
-        '30': '30deg',
-        '60': '60deg',
-        '90': '90deg',
-        '180': '180deg',
-      },
+        30: '30deg',
+        60: '60deg',
+        90: '90deg',
+        180: '180deg'
+      }
     },
     screens: {
       '2xl': { max: '1600px' },

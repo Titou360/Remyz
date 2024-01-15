@@ -7,3 +7,8 @@
     height: 100dvh;
   }
 }
+
+@font-face {
+  font-family: "Spring";
+  src: url("/assets/fonts/Spring_Garden.ttf");
+}
