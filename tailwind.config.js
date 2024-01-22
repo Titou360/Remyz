@@ -13,7 +13,8 @@ module.exports = {
         light: '#f2f2f2',
         primary: '#0c4012',
         darky: '#1F2937',
-        darkModePrimary: '#00796B'
+        darkModePrimary: '#00B39E',
+        nemo: '#F77300'
       },
       rotate: {
         30: '30deg',

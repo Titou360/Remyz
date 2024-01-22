@@ -69,6 +69,20 @@
       ]
     },
     {
+      "title": "Entretien de votre potager",
+      "cover": "/assets/img/Features/potager.jpg",
+      "description": "Service d'entretien du potager pour maximiser la croissance et la productivité de vos plantes.",
+      "info": [
+        "1. Analyse des cultures existantes",
+        "2. Évaluation des besoins en nutriments",
+        "3. Amendement du sol pour améliorer sa structure et sa fertilité",
+        "4. Taille des plants pour favoriser une croissance saine",
+        "5. Application de compost organique",
+        "6. Suivi des cycles de croissance et ajustement des cultures en fonction des saisons",
+        "7. Conseils personnalisés pour l'entretien continu du potager"
+      ]
+    },
+    {
       "title": "Aménagement",
       "cover": "/assets/img/Features/amenagement.jpg",
       "description": "Aménagement paysager de vos espaces",
@@ -118,12 +132,37 @@
       "cover": "/assets/img/Partners/nemo.jpg",
       "description": "Solution digiale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet",
       "type": "informatique"
+    }
+  ],
+
+  "timeSchedule": [
+    {
+      "day": "Lundi",
+      "time": "08h00-12h00 - 14h00-18h00"
     },
     {
-      "name": "Nemo Solutions",
-      "cover": "/assets/img/Partners/nemo.jpg",
-      "description": "Solution digiale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet",
-      "type": "informatique"
+      "day": "Mardi",
+      "time": "08h00-12h00 - 14h00-18h00"
+    },
+    {
+      "day": "Mercredi",
+      "time": "08h00-12h00 - 14h00-18h00"
+    },
+    {
+      "day": "Jeudi",
+      "time": "08h00-12h00 - 14h00-18h00"
+    },
+    {
+      "day": "Vendredi",
+      "time": "08h00-12h00 - 14h00-18h00"
+    },
+    {
+      "day": "Samedi",
+      "time": "Fermé"
+    },
+    {
+      "day": "Dimanche",
+      "time": "Fermé"
     }
   ]
 }

@@ -3,8 +3,8 @@ import React from 'react'
 const Resume = () => {
   return (
     <div className="w-full h-auto m-auto flex justify-center flex-row xs:flex-col gap-5 items-baseline border-solid border-4 bg-primary px-2 py-4">
-      <blockquote className="text-lg italic font-semibold text-white xs:text-center ">
-        <p>Consultez notre liste de services pour votre jardin et obtenez un devis gratuit</p>
+      <blockquote className="text-md italic font-semibold text-white text-center ">
+        <p>Obtenez un devis gratuit un devis gratuit</p>
       </blockquote>
       <button
         type="button"

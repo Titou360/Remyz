@@ -99,11 +99,11 @@ const Navbar = () => {
         </div>
         <nav>
           <CustomLink href="/" className="mr-3 dark:text-light" title="Accueil" />
-          <CustomLink href="#about" className="mx-3 dark:text-light" title="À propos" />
-          <CustomLink href="#services" className="mx-3 dark:text-light" title="Services" />
-          <CustomLink href="#business" className="mx-3 dark:text-light" title="Partenaires" />
-          <CustomLink href="#contact" className="mx-3 dark:text-light" title="Contact" />
-          <CustomLink href="/FAQ" className="ml-3 dark:text-light" title="FAQ" />
+          <CustomLink href="/#about" className="mx-3 dark:text-light" title="À propos" />
+          <CustomLink href="/#services" className="mx-3 dark:text-light" title="Services" />
+          <CustomLink href="/#business" className="mx-3 dark:text-light" title="Partenaires" />
+          <CustomLink href="/contact" className="mx-3 dark:text-light" title="Contact" />
+          <CustomLink href="/faq" className="ml-3 dark:text-light" title="FAQ" />
 
         </nav>
       </div>
