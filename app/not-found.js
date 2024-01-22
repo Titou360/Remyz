@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import errorImage from "../public/assets/img/errorpage/error.jpg"
+import errorImage from "../public/assets/img/Errorpage/error.jpg"
 import Image from 'next/image';
 
 export default function Custom404() {
