@@ -4,8 +4,8 @@ export const WhatsAppIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={64}
-    height={64}
+    width={32}
+    height={32}
     stroke="#000"
     viewBox="-30.8 -30.8 369.6 369.6"
     className={`w-full h-auto bi bi-moon-stars ${className}`}

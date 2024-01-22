@@ -130,7 +130,7 @@
     {
       "name": "Nemo Solutions",
       "cover": "/assets/img/Partners/nemo.jpg",
-      "description": "Solution digiale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet",
+      "description": "Solution digitale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet vitrine ou e-commerce",
       "type": "informatique"
     }
   ],
@@ -164,5 +164,16 @@
       "day": "Dimanche",
       "time": "Fermé"
     }
-  ]
+  ],
+
+  "faq" : [
+    {
+    "question" : "Dans quelles communes Rémy se déplace-t-il ?",
+    "answer" : "Je me déplace 30 kilomètres autour de Salles, n'hésitez pas à me contacter via le formulaire si vous habitez en dehors de cette zone"
+    },
+        {
+    "question" : "Quelles sont les moyens de réglements acceptés par Rémy ?",
+    "answer" : "J'accepte les réglements par espéces, chèque bancaire ou postal et virement bancaire"
+        }
+      ]
 }
