@@ -4,26 +4,26 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FacebookIcon, MoonIcon, SunIcon } from './Icons';
-import Logo from './Logo';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 import IconNavbar from './IconNavbar';
+import Title from './Title';
 
 const CustomLink = ({ href, title, className = '' }) => {
   const pathname = usePathname();
 
   return (
-    <Link href={href} className={`${className} relative group`}>
-      {title}
+      <Link href={href} className={`${className} relative group`}>
+        {title}
 
-      <span
-        className={`
+        <span
+          className={`
       h-[2px] inline-block bg-primary dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
       ${pathname === href ? 'w-full' : 'w-0'}
       `}
-      >
-        &nbsp;
-      </span>
-    </Link>
+        >
+          &nbsp;
+        </span>
+      </Link>
   );
 };
 
@@ -38,7 +38,7 @@ const CustomMobileLink = ({ href, title, className = '', toggle }) => {
 
   return (
     <Link legacyBehavior href={href}>
-      <a className={`${className} relative group text-light dark:text-dark my-2 `} onClick={handleClick}>
+      <a className={`${className} relative group text-light dark:text-primary my-2 `} onClick={handleClick}>
         {title}
         <span
           className={`
@@ -63,7 +63,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-light dark:bg-darky px-32 py-8 font-medium flex items-center justify-between shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dark:border-solid dark:border-primary dark:border-b-2">
+    <header className="w-full fixed z-20 bg-light dark:bg-darky px-32 py-8 font-medium flex items-center justify-between shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dark:border-solid dark:border-primary dark:border-b-2">
       <button
         aria-label="button hamburger menu"
         className="absolute top-5 left-5 flex-col justify-center items-center hidden lg:flex"
@@ -104,27 +104,28 @@ const Navbar = () => {
           <CustomLink href="/#business" className="mx-3 dark:text-light" title="Partenaires" />
           <CustomLink href="/contact" className="mx-3 dark:text-light" title="Contact" />
           <CustomLink href="/faq" className="ml-3 dark:text-light" title="FAQ" />
-
         </nav>
       </div>
       {isOpen ? (
         <motion.div
           initial={{ scale: 0, opcacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[75vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
+          className="min-w-[75vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary/80 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex flex-col items-center justify-center ">
-            <CustomMobileLink href="/" className=" dark:text-dark" title="Accueil" toggle={handleClick} />
-            <CustomMobileLink href="/about-me" className=" dark:text-dark" title="À propos" toggle={handleClick} />
-            <CustomMobileLink href="/myprojects" className=" dark:text-dark" title="Projets" toggle={handleClick} />
-            <CustomMobileLink href="/contact-me" className="dark:text-dark" title="Contact" toggle={handleClick} />
+            <CustomMobileLink href="/" className=" dark:text-primary" title="Accueil" toggle={handleClick} />
+            <CustomMobileLink href="/#about" className=" dark:text-dark" title="À propos" toggle={handleClick} />
+            <CustomMobileLink href="/#services" className=" dark:text-dark" title="Services" toggle={handleClick} />
+            <CustomMobileLink href="/#business" className="dark:text-dark" title="Partenaires" toggle={handleClick} />
+            <CustomMobileLink href="/contact" className="dark:text-dark" title="Contact" toggle={handleClick} />
+            <CustomMobileLink href="/faq" className="dark:text-dark" title="FAQ" toggle={handleClick} />
           </nav>
           <div className="flex flex-row justify-center items-center mt-20">
             <nav className="flex items-center justify-center flex-nowrap">
               <motion.a
                 tabIndex="0"
                 aria-label="Rejoingez Rémy sur Facebook"
-                href="https://www.linkedin.com/in/cl%C3%A9ment-felices-30784425a/"
+                href="https://www.facebook.com/remyzauxverts/"
                 target="_blank"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -149,7 +150,7 @@ const Navbar = () => {
       ) : null}
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
+        <Title />
       </div>
     </header>
   );

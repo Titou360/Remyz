@@ -16,7 +16,7 @@ const TimeSchedule = () => {
     <div>
       <ul>
         {data.timeSchedule.map((schedule, index) => (
-          <li className={`text-light ${schedule.day === currentDay ? 'text-red' : ''}`} key={index}>
+          <li className={`text-light lg:text-sm ${schedule.day === currentDay ? 'text-red' : ''}`} key={index}>
             {schedule.day === currentDay && <span className="text-red">➤</span>}
             {`${schedule.day}: ${schedule.time}`}
           </li>

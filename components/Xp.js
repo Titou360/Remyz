@@ -3,7 +3,7 @@ import AnimatedNumber from './AnimatedNumber';
 
 const Xp = () => {
   return (
-    <section id="experience" className="mt-10">
+    <section id="experience" className="my-12">
       <h2 className="text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">Mon expérience</h2>
 
       <div className="grid grid-cols-3 xs:grid-cols-1 xs:gap-4 justify-center items-center">
