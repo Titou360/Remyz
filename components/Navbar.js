@@ -63,7 +63,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full fixed z-20 bg-light dark:bg-darky px-32 xs:px-16 py-8 font-medium flex items-center justify-between shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dark:border-solid dark:border-primary dark:border-b-2">
+    <header className="w-full fixed z-20 bg-light dark:bg-darky px-32 xs:px-16 py-2 lg:py-8 font-medium flex items-center justify-between shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dark:border-solid dark:border-primary dark:border-b-2">
       <button
         aria-label="button hamburger menu"
         className="absolute top-5 left-5 flex-col justify-center items-center hidden lg:flex"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 target="_blank"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-6 mx-3 sm:mx-1 dark:fill-primary fill-light"
+                className="mx-3 sm:mx-1 dark:fill-primary fill-light"
               >
                 <FacebookIcon />
               </motion.a>

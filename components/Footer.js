@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <footer className="w-full h-full p-4 flex flex-row lg:flex-col items-start justify-around bg-primary dark:bg-darky gap-10 dark:border-top-solid dark:border-t-[2px] dark:border-light ">
         <div className=" flex flex-col w-1/3 lg:w-full gap-4 pt-2">
-          <h2 className="font-Spring tracking-wider text-4xl text-light font-bold dark:text-darkModePrimary text-center lg:text-left">
+          <h2 className="font-Spring tracking-wider text-4xl text-light font-bold dark:text-darkModePrimary text-left lg:text-left">
             Remy&apos;z Aux Verts
           </h2>
           <p className="text-light">
@@ -20,13 +20,12 @@ const Footer = () => {
           <IconNavbar />
         </div>
 
-        <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2">
+        <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2 items-center">
           <h2 className="font-Spring tracking-wider text-4xl text-light font-bold dark:text-darkModePrimary text-center lg:text-left">
             Liens utiles
           </h2>
           <ul>
             <li>
-              {' '}
               <Link href="https://www.nemosolutions.fr" className=" text-light" target="_blank">
                 Nemo Solutions 🐙
               </Link>
@@ -35,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2 ">
-          <h2 className="font-Spring tracking-wider text-4xl text-light dark:text-darkModePrimary font-bold text-center lg:text-left">
+          <h2 className="font-Spring tracking-wider text-4xl text-light dark:text-darkModePrimary font-bold text-right lg:text-left">
             Horaires d&apos;ouverture
           </h2>
           <TimeSchedule />
