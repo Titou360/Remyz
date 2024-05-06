@@ -110,7 +110,7 @@ const Navbar = () => {
         <motion.div
           initial={{ scale: 0, opcacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[75vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary/80 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
+          className="min-w-[75vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary/80 dark:bg-light/75 rounded-lg backdrop-blur-md py-16"
         >
           <nav className="flex flex-col items-center justify-center ">
             <CustomMobileLink href="/" className=" dark:text-primary" title="Accueil" toggle={handleClick} />
@@ -120,7 +120,7 @@ const Navbar = () => {
             <CustomMobileLink href="/contact" className="dark:text-dark" title="Contact" toggle={handleClick} />
             <CustomMobileLink href="/faq" className="dark:text-dark" title="FAQ" toggle={handleClick} />
           </nav>
-          <div className="flex flex-row justify-center items-center mt-20 h-8">
+          <div className="flex flex-row justify-center items-center mt-10">
             <nav className="flex items-center justify-center flex-nowrap gap-4">
               <motion.a
                 tabIndex="0"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 target="_blank"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className={`w-6 h-6 dark:fill-primary fill-light`}
+                className={`w-6 h-6`}
               >
                 <FacebookIcon />
               </motion.a>
@@ -139,7 +139,7 @@ const Navbar = () => {
                 className="flex items-center justify-center rounded-full"
               >
                 {mode === 'dark' ? (
-                  <SunIcon className={'w-6 h-6 '} />
+                  <SunIcon className={'w-6 h-6'} />
                 ) : (
                   <MoonIcon className={'w-6 h-6'} />
                 )}
