@@ -94,7 +94,7 @@ export const MoonIcon = ({ className, ...rest }) => (
     width={32}
     height={32}
     viewBox="0 0 72 72"
-    className={`w-full h-auto bi bi-moon-stars ${className}`}
+    className={`w-full h-auto ${className}`}
     {...rest}
   >
     <path

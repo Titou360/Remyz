@@ -7,7 +7,7 @@ const PartnersCard = ({ data }) => {
   const { name, cover, description, type } = data;
   return (
     <div className="grid min-h-[120px] place-items-center rounded-lg p-6 lg:overflow-visible">
-      <div className="relative flex w-3/4 max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative flex w-3/4 xs:w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
           <Image src={cover} width={150} height={150} alt="image" className="object-cover w-full h-full" />
           {/* Black Friday Mega Offer */}

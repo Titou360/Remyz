@@ -132,7 +132,13 @@
       "cover": "/assets/img/Partners/nemo.jpg",
       "description": "Solution digitale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet vitrine ou e-commerce",
       "type": "informatique"
-    }
+    },
+        {
+          "name": "Un autre partenaire",
+          "cover": "",
+          "description": "Descriptif",
+          "type": "à définir"
+        }
   ],
 
   "timeSchedule": [

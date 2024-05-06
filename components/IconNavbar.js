@@ -19,7 +19,7 @@ const IconNavbar = () => {
         <FacebookIcon />
       </motion.a>
 
-      <motion.a
+      {/* <motion.a
         tabIndex="0"
         aria-label="Join me on Linkedin"
         href="#"
@@ -29,7 +29,7 @@ const IconNavbar = () => {
         className="w-10 ml-3"
       >
         <LinkedinIcon />
-      </motion.a>
+      </motion.a> */}
     </nav>
   );
 };

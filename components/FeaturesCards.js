@@ -18,7 +18,7 @@ const FeaturesCards = ({ data }) => {
   return (
     <>
       {/* Mobile & Tablet mode */}
-      <div className="hidden lg:block h-96 w-96 lg:h-80 lg:w-80 [perspective:1000px] xs:px-3">
+      <div className="hidden lg:block h-96 w-96 m-auto lg:h-80 lg:w-80 [perspective:1000px]">
         <div className="relative h-full w-full rounded-xl shadow-xl">
           <Image
             src={cover}
@@ -37,7 +37,7 @@ const FeaturesCards = ({ data }) => {
       </div>
 
       {/* Desktop mode */}
-      <div className=" lg:hidden group h-96 w-96 lg:h-80 lg:w-80 [perspective:1000px] xs:px-3">
+      <div className=" lg:hidden group h-96 w-96 lg:h-80 lg:w-80 [perspective:1000px]">
         <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0">
             <Image

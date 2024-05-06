@@ -15,7 +15,7 @@ const Footer = () => {
           </h2>
           <p className="text-light">
             Remy&apos;z aux Verts, votre jardinier en Val de l&apos;Eyre. <br />
-            Je vous propose mon excellence dans l&apos;entretien de votre jardin, Je me déplace pour les particuliers, les professionnels et les associations selon la zone de chalandise définie. Devis gratuit.
+            Je vous propose mon excellence dans l&apos;entretien de votre jardin.<br/> Je me déplace pour les particuliers, les professionnels et les associations selon la zone de chalandise définie. Devis gratuit.
           </p>
           <IconNavbar />
         </div>

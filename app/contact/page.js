@@ -58,16 +58,16 @@ const Page = () => {
 
   return (
     <>
-      <section id="contact" className="w-full pt-2 mb-6 flex flex-col items-center text-dark">
-        <div className="pt-0 flex flex-col items-center text-dark w-full min-h-screen">
-          <h2 className="text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">Contactez-moi</h2>
+      <section id="contact" className="w-full pb-14 flex flex-col items-center bg-light dark:bg-darky">
+        <div className="pt-0 flex flex-col items-center text-dark dark:text-white w-full min-h-screen">
+          <h2 className="text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring mt-32">Contactez-moi</h2>
 
           <div className="flex justify-center items-center w-full h-auto mt-10 sm:mt-0">
             <div className="container my-4 px-4 lg:px-3 lg:my-120">
-              <div className="w-4/5 mx-auto p-20 lg:p-4 my-4 mr-auto rounded-2xl shadow-2xl bg-white items-center justify-center">
+              <div className="w-4/5 mx-auto p-20 lg:p-4 my-4 mr-auto rounded-2xl shadow-2xl bg-white dark:bg-darky dark:border dark:border-1  items-center justify-center">
                 <div className="flex justify-between">
                   <h2 className="font-bold uppercase text-5xl sm:text-3xl">
-                    Envoyez-moi <br /> un <span className="text-primary">mess@ge</span>
+                    Envoyez-moi <br /> un <span className="text-primary dark:text-darkModePrimary">mess@ge</span>
                   </h2>
                 </div>
                 <form className="grid grid-cols-2 gap-5 lg:grid-cols-1 mt-5 lg:items-center lg:justify-center" onSubmit={submitHandler}>
@@ -150,7 +150,7 @@ const Page = () => {
                   ? 'bg-green-500'
                   : formStatus === 'error'
                   ? 'bg-red-500'
-                  : 'bg-primary'
+                  : 'bg-primary dark:bg-darkModePrimary'
               }
               text-light text-xl lg:text-lg focus:outline-none focus:shadow-outline`}
                       disabled={formStatus === 'sending'}
