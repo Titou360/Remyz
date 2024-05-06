@@ -120,7 +120,7 @@ const Navbar = () => {
             <CustomMobileLink href="/contact" className="dark:text-dark" title="Contact" toggle={handleClick} />
             <CustomMobileLink href="/faq" className="dark:text-dark" title="FAQ" toggle={handleClick} />
           </nav>
-          <div className="flex flex-row justify-center items-center mt-20">
+          <div className="flex flex-row justify-center items-center mt-20 h-8">
             <nav className="flex items-center justify-center flex-nowrap">
               <motion.a
                 tabIndex="0"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 target="_blank"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="m-3 lg:m-1 sm:mx-1 dark:fill-primary fill-light"
+                className="w-6 h-6 lg:m-1 sm:mx-1 dark:fill-primary fill-light"
               >
                 <FacebookIcon />
               </motion.a>
@@ -139,9 +139,9 @@ const Navbar = () => {
                 className="m-3 lg:m-1 flex items-center justify-center rounded-full p-1 sm:mx-1"
               >
                 {mode === 'dark' ? (
-                  <SunIcon className={'fill-primary mr-3 sm:mx-1'} />
+                  <SunIcon className={'fill-primary w-6 h-6 sm:mx-1'} />
                 ) : (
-                  <MoonIcon className={'fill-dark lg:fill-light mr-3 sm:mx-1'} />
+                  <MoonIcon className={'fill-dark lg:fill-light w-6 h-6 mr-3 sm:mx-1'} />
                 )}
               </button>
             </nav>
