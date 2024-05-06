@@ -3,9 +3,9 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div className="w-full h-auto m-auto flex justify-center flex-row xs:flex-col gap-5 items-baseline border-solid border-4 bg-primary px-2 py-4">
+    <div className="w-full h-auto m-auto flex justify-center lg:items-center flex-row xs:flex-col gap-5 items-baseline border-solid border-4 bg-primary px-2 py-4">
       <blockquote className="text-md italic font-semibold text-white text-center ">
-        <p>Obtenez un devis gratuit un devis gratuit</p>
+        <p className='text-center'>Obtenez un devis gratuit un devis gratuit</p>
       </blockquote>
       <Link
         type="button"

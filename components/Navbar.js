@@ -91,7 +91,7 @@ const Navbar = () => {
           <button
             aria-label="button dark mode"
             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-            className="ml-3 flex items-center justify-center rounded-full p-1"
+            className="lg:max-w-6 lg:max-h-6 ml-3 flex items-center justify-center rounded-full p-1"
           >
             {mode === 'dark' ? <SunIcon className={'fill-primary'} /> : <MoonIcon className={'fill-dark'} />}
           </button>
