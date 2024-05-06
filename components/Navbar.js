@@ -129,19 +129,19 @@ const Navbar = () => {
                 target="_blank"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="mx-3 sm:mx-1 dark:fill-primary fill-light"
+                className="m-3 lg:m-1 sm:mx-1 dark:fill-primary fill-light"
               >
                 <FacebookIcon />
               </motion.a>
 
               <button
                 onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                className="ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1"
+                className="m-3 lg:m-1 flex items-center justify-center rounded-full p-1 sm:mx-1"
               >
                 {mode === 'dark' ? (
-                  <SunIcon className={'fill-primary w-6 mr-3 sm:mx-1'} />
+                  <SunIcon className={'fill-primary mr-3 sm:mx-1'} />
                 ) : (
-                  <MoonIcon className={'fill-dark lg:fill-light w-6 mr-3 sm:mx-1'} />
+                  <MoonIcon className={'fill-dark lg:fill-light mr-3 sm:mx-1'} />
                 )}
               </button>
             </nav>
