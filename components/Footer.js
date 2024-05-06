@@ -20,7 +20,7 @@ const Footer = () => {
           <IconNavbar />
         </div>
 
-        <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2 items-center">
+        <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2 items-center lg:items-start">
           <h2 className="font-Spring tracking-wider text-4xl text-light font-bold dark:text-darkModePrimary text-center lg:text-left">
             Liens utiles
           </h2>
@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col w-1/3 lg:w-full gap-4 pt-2 ">
+        <div className="flex flex-col w-1/3 lg:w-full lg:items-start gap-4 pt-2 ">
           <h2 className="font-Spring tracking-wider text-4xl text-light dark:text-darkModePrimary font-bold text-right lg:text-left">
             Horaires d&apos;ouverture
           </h2>
