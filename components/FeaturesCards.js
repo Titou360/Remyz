@@ -18,12 +18,12 @@ const FeaturesCards = ({ data }) => {
   return (
     <>
       {/* Mobile & Tablet mode */}
-      <div className="hidden lg:block h-96 w-96 m-auto lg:h-80 lg:w-80 [perspective:1000px]">
+      <div className="hidden lg:block h-96 w-96 m-auto lg:h-72 lg:w-72 [perspective:1000px]">
         <div className="relative h-full w-full rounded-xl shadow-xl">
           <Image
             src={cover}
             alt={`Image de ${title}`}
-            className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 dark:shadow-light"
+            className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
             width={300}
             height={180}
           />
