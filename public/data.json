@@ -176,12 +176,20 @@
 
   "faq" : [
     {
-    "question" : "Dans quelles communes Rémy se déplace-t-il ?",
-    "answer" : "Je me déplace 30 kilomètres autour de Salles, n'hésitez pas à me contacter via le formulaire si vous habitez en dehors de cette zone"
+      "question": "Quel type de services offre Remy'z Aux Verts ?",
+      "answer": "Les services proposés vont de la tonte de gazon au taillage de haies, sans oublier...."
     },
-        {
-    "question" : "Quelles sont les moyens de réglements acceptés par Rémy ?",
-    "answer" : "J'accepte les réglements par espéces, chèque bancaire ou postal et virement bancaire"
-        }
-      ]
+    {
+      "question": "Dans quelles communes Rémy se déplace-t-il ?",
+      "answer": "Je me déplace 30 kilomètres autour de Salles, n'hésitez pas à me contacter via le formulaire si vous habitez en dehors de cette zone. Voici une liste non exhausitve de communes couvertes : Belin-Béliet, Lugos, Salles, Saugnacq et Muret, Sanguinet, Bilos, "
+    },
+    {
+      "question": "Quels sont les tarifs ?",
+      "answer": "Les tarifs des prestations dépendent de plusieurs facteurs. Merci d'utiliser le formulaire de contact et de me détailler vos travaux. Je serai dans la capacité de fournir un devis"
+    },
+    {
+      "question": "Quelles sont les moyens de réglements acceptés par Rémy ?",
+      "answer": "J'accepte les réglements par chèque bancaire et virement bancaire. Remy'z aux verts est affilié au crédit d'impôts direct, jusqu'à 50% de réduction sur votre facture."
+    }
+  ]
 }

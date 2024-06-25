@@ -2,8 +2,6 @@ import Link from 'next/link';
 import IconNavbar from './IconNavbar';
 import TimeSchedule from './TimeSchedule';
 import Copyrights from './Copyrights';
-import Payments from './Payments';
-
 
 const Footer = () => {
   return (
@@ -40,8 +38,6 @@ const Footer = () => {
           <TimeSchedule />
         </div>
       </footer>
-
-      <Payments />
 
       <Copyrights />
     </>

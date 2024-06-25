@@ -6,9 +6,9 @@ import Image from 'next/image';
 const PartnersCard = ({ data }) => {
   const { name, cover, description, type } = data;
   return (
-    <div className="grid min-h-[120px] place-items-center rounded-lg p-6 lg:overflow-visible">
-      <div className="relative flex w-3/4 xs:w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-        <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
+    <div className="grid h-auto place-items-center rounded-lg p-6 lg:overflow-visible">
+      <div className="relative flex w-3/4 xs:w-full max-w-[48rem] flex-row lg:flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md lg:items-center">
+        <div className="relative w-2/5 lg:w-1/4 lg:h-1/2 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
           <Image src={cover} width={150} height={150} alt="image" className="object-cover w-full h-full" />
           {/* Black Friday Mega Offer */}
           {/* <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-75 rounded-xl">
@@ -26,7 +26,7 @@ const PartnersCard = ({ data }) => {
           <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">{description}</p>
           <a className="inline-block" href="#">
             <button
-              className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-primary uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="flex items-center gap-2 font-sans text-xs font-bold text-center text-primary uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
             >
               Découvrir
