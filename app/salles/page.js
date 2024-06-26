@@ -1,13 +1,14 @@
 'use client';
 import { ArrowIcon } from '@/components/Icons';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Button from '../../components/Buttton';
 import SeoImage from '../../public/assets/img/SEO/Infographie-Remyz-aux-verts-jardinier-salles.png';
 import Image from 'next/image';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef(null);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -16,41 +17,51 @@ const Page = () => {
   return (
     <section id="sitemap" className="w-full pt-14 flex flex-col items-center bg-light dark:bg-darky">
       <div className="w-full flex flex-col items-center justify-center gap-6 my-8">
-        <h1 className="text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
+        {/* H1 desktop */}
+        <h1 className="lg:hidden text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
           Remy&apos;z aux Verts : Jardinier à Salles
+        </h1>
+        {/* H1 mobile */}
+        <h1 className="hidden lg:block lg:text-4xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
+          Remy&apos;z aux Verts
+          <br /> Jardinier à Salles
         </h1>
       </div>
 
-      <div className="w-5/6 h-auto mx-auto bg-white rounded-t-lg border border-1 border-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ">
-        <div className="m-12">
-          <div>
-            <p className="text-center">
-              <span className="font-bold text-xl">Vous êtes à la recherche d’un jardinier professionnel reconnu à Salles ?</span>
-              <br />
-              <br />
-              <span className="text-xl">Ne cherchez pas plus loin ! Vous êtes sur le bon site Internet !</span>
-              <br />
-              <br />
-              <span className="text-xl">
-                <span className="text-primary font-Spring text-2xl">Rémy&apos;Z Aux Verts</span> est là pour vous aider à l&apos;entretien de votre
-                jardin et de vos espaces verts
-              </span>
-            </p>
-          </div>
+      <div className="w-5/6 lg:w-[95%] h-auto mx-auto bg-white rounded-t-lg border border-1 border-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className="m-12 lg:m-4">
+          <p className="text-center">
+            <span className="font-bold text-xl">Vous êtes à la recherche d’un jardinier professionnel reconnu à Salles ?</span>
+            <br />
+            <br />
+            <span className="text-xl">Ne cherchez pas plus loin ! Vous êtes sur le bon site Internet !</span>
+            <br />
+            <br />
+            <span className="text-xl">
+              <span className="text-primary font-Spring text-2xl">Rémy&apos;Z Aux Verts</span> est là pour vous aider à l&apos;entretien de votre
+              jardin et de vos espaces verts
+            </span>
+          </p>
           <div className="mt-12 flex items-center justify-center">
             <Button href="/#contact" title="Prendre contact" />
           </div>
           <div className="mt-12">
-            <div className="flex items-center justify-between w-full border-2 bg-primary py-4" onClick={toggleOpen}>
+            <div className="flex items-center justify-between w-full border-2 bg-primary py-4 cursor-pointer" onClick={toggleOpen}>
               <h2 className="ml-4 text-xl text-white">Tables des matières</h2>
               <ArrowIcon
-                className={`mr-4 transition-transform duration-300 rotate-90 ${isOpen ? 'rotate-x-180' : ''}`}
+                className={`mr-4 transition-transform duration-300 ${isOpen ? 'rotate-90' : '-rotate-90'}`}
                 fill="white"
                 width={24}
                 height={24}
               />
             </div>
-            <div className={`ml-4 mt-4 transition-all duration-300 ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
+            <div
+              ref={contentRef}
+              className={`ml-4 mt-4 transition-all duration-300 ease-in-out overflow-hidden`}
+              style={{
+                maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0px'
+              }}
+            >
               <ol className="list-decimal ml-4">
                 <li>
                   <Link href="#necessites">La nécessité d&apos;un jardinier à Salles</Link>
@@ -191,7 +202,7 @@ const Page = () => {
               Enfin pour un projet sur mesure, le coût peut dépasser les 900 €.
             </p>
           </div>
-          <div className="mt-12 flex items-center justify-center">
+          <div className="my-12 flex items-center justify-center">
             <Image src={SeoImage} alt="Infographie-Remyz-aux-verts-jardinier-salles" />
           </div>
         </div>
