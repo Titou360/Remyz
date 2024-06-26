@@ -71,7 +71,7 @@ export const LinkedinIcon = ({ className, ...rest }) => (
 
 // Dark mode icons
 export const SunIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 72 72" className={`w-full h-auto ${className}`} {...rest}>
+  <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 72 72" className={`w-6 h-6 ${className}`} {...rest}>
     <circle cx={36} cy={36} r={15} fill="#fcea2b" />
     <g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit={10} strokeWidth={2}>
       <circle cx={36} cy={36} r={15} />
@@ -81,7 +81,7 @@ export const SunIcon = ({ className, ...rest }) => (
 );
 
 export const MoonIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 72 72" className={`w-full h-auto ${className}`} {...rest}>
+  <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 72 72" className={`w-6 h-6 ${className}`} {...rest}>
     <path
       fill="#FCEA2B"
       d="M7.363 42.41c4.553 6.17 11.874 10.172 20.13 10.172 13.808 0 25-11.193 25-25 0-8.523-4.264-16.05-10.776-20.562C54.756 9.858 64.5 21.463 64.5 35.352c0 16.016-12.984 29-29 29-13.588 0-24.99-9.33-28.136-21.943z"
