@@ -3,27 +3,27 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { FacebookIcon, MoonIcon, SunIcon } from './Icons';
-import useThemeSwitcher from './hooks/useThemeSwitcher';
 import IconNavbar from './IconNavbar';
+import { FacebookIcon, MoonIcon, SunIcon } from './Icons';
 import Title from './Title';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
   const pathname = usePathname();
 
   return (
-      <Link href={href} className={`${className} relative group`}>
-        {title}
+    <Link href={href} className={`${className} relative group`}>
+      {title}
 
-        <span
-          className={`
+      <span
+        className={`
       h-[2px] inline-block bg-primary dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 
       ${pathname === href ? 'w-full' : 'w-0'}
       `}
-        >
-          &nbsp;
-        </span>
-      </Link>
+      >
+        &nbsp;
+      </span>
+    </Link>
   );
 };
 
@@ -93,7 +93,7 @@ const Navbar = () => {
             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
             className="lg:max-w-6 lg:max-h-6 ml-3 flex items-center justify-center rounded-full p-1"
           >
-            {mode === 'dark' ? <SunIcon className={'fill-primary w-6 h-6'} /> : <MoonIcon className={'fill-dark w-6 h-6'} />}
+            {mode === 'dark' ? <SunIcon className={'w-6 h-6'} /> : <MoonIcon className={'w-6 h-6'} />}
           </button>
           <IconNavbar />
         </div>
@@ -134,15 +134,8 @@ const Navbar = () => {
                 <FacebookIcon />
               </motion.a>
 
-              <button
-                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                className="flex items-center justify-center rounded-full"
-              >
-                {mode === 'dark' ? (
-                  <SunIcon className={'w-6 h-6'} />
-                ) : (
-                  <MoonIcon className={'w-6 h-6'} />
-                )}
+              <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')} className="flex items-center justify-center rounded-full">
+                {mode === 'dark' ? <SunIcon className={'w-6 h-6'} /> : <MoonIcon className={'w-6 h-6'} />}
               </button>
             </nav>
           </div>
