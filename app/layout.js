@@ -6,11 +6,6 @@ import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Remyz Aux Verts, votre jardinier en Val de L Eyre',
-  description: 'RemyZ aux Verts, jardinier à Salles, Lugos, Belin-Béliet. Découvrez mes services ☝',
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
