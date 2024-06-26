@@ -24,10 +24,16 @@ const Page = () => {
   return (
     <>
       <Helmet>
-        <title>Remy&apos;Z Aux Verts | Votre jardinier à Salles</title>
-        <meta name="description" content="Remy'z Aux Verts, jardinier à Salles, j'entretiens tous vos espaces verts, plantes, fleurs. " />
+        <title>RemyZ Aux Verts : Votre jardinier à Salles</title>
+        <meta
+          name="description"
+          content="Remy'z Aux Verts, jardinier à Salles, j'entretiens tous vos espaces verts : tonte, taille, gestion des déchets verts"
+        />
         <meta property="og:title" content="Remy'Z Aux Verts | Votre jardinier à Salles" />
-        <meta property="og:description" content="Remy'z Aux Verts, jardinier à Salles, j'entretiens tous vos espaces verts : tonte de gazon, taille de haies, tous travaux de jardinnage " />
+        <meta
+          property="og:description"
+          content="Remy'z Aux Verts, jardinier à Salles, j'entretiens tous vos espaces verts : tonte, taille, gestion des déchets verts "
+        />
         <meta property="og:url" content="https://test-remyz.vercel.app/salles" />
       </Helmet>
 
