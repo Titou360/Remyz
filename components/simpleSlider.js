@@ -1,5 +1,5 @@
 'use client';
-import data from 'public/data.json';
+import data from '../public/data.json';
 import Slider from 'react-slick';
 import PartnersCard from './PartersCard';
 
