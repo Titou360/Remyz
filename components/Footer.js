@@ -23,7 +23,7 @@ const Footer = () => {
           <h2 className="font-Spring tracking-wider text-4xl text-light font-bold dark:text-darkModePrimary text-center lg:text-left">
             Liens utiles
           </h2>
-          <ul className="flex flex-col items-center justify-center">
+          <ul className="flex flex-col items-center justify-center lg:items-start">
             <li>
               <Link href="https://www.nemosolutions.fr" className="text-light" target="_blank">
                 Nemo Solutions 🐙
