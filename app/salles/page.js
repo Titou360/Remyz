@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import Button from '../../components/Buttton';
 import SeoImage from '../../public/assets/img/SEO/Infographie-Remyz-aux-verts-jardinier-salles.png';
+import SocialShare from '@/components/SocialShare';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +15,11 @@ const Page = () => {
     setIsOpen(!isOpen);
   };
 
-    const [currentUrl, setCurrentUrl] = useState('');
-    const [title, setTitle] = useState('');
-
+  const [currentUrl, setCurrentUrl] = useState('');
     useEffect(() => {
       setCurrentUrl(window.location.href);
-      setTitle(document.title);
     }, []);
+
   return (
     <section id="sitemap" className="w-full pt-14 flex flex-col items-center bg-light dark:bg-darky">
       <div className="w-full flex flex-col items-center justify-center gap-6 my-8">
@@ -216,14 +215,7 @@ const Page = () => {
           <div>
             <h2>Partagez ceci autour de vous !</h2>
             <div className="flex items-center justify-center">
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="share-button facebook"
-              >
-                Share on Facebook
-              </a>
+              <SocialShare currentUrl={currentUrl} />
             </div>
           </div>
         </div>
