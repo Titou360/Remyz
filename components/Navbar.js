@@ -93,7 +93,7 @@ const Navbar = () => {
             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
             className="lg:max-w-6 lg:max-h-6 ml-3 flex items-center justify-center rounded-full p-1"
           >
-            {mode === 'dark' ? <SunIcon className={'fill-primary'} /> : <MoonIcon className={'fill-dark'} />}
+            {mode === 'dark' ? <SunIcon className={'fill-primary w-6 h-6'} /> : <MoonIcon className={'fill-dark w-6 h-6'} />}
           </button>
           <IconNavbar />
         </div>

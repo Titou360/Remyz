@@ -43,7 +43,7 @@ const FeaturesCards = ({ data }) => {
             <Image
               src={cover}
               alt={`Image de ${title}`}
-              className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 dark:shadow-light"
+              className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
               width={300}
               height={180}
             />

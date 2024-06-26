@@ -10,9 +10,11 @@ export default function Accordions() {
       {data.faq.map((q) => (
         <AccordionItem key={q.index}>
           <AccordionItemHeading>
-            <AccordionItemButton className="w-full border border-solid font-bold text-light bg-primary">{q.question}</AccordionItemButton>
+            <AccordionItemButton className="w-full border border-solid font-bold text-light bg-primary dark:bg-white dark:text-black">
+              {q.question}
+            </AccordionItemButton>
           </AccordionItemHeading>
-          <AccordionItemPanel className="w-full border border-solid border-primary px-2">{q.answer}</AccordionItemPanel>
+          <AccordionItemPanel className="w-full border border-solid border-primary dark:border-darkModePrimary bg-white px-2">{q.answer}</AccordionItemPanel>
         </AccordionItem>
       ))}
     </Accordion>
