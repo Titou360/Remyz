@@ -130,6 +130,7 @@
     {
       "name": "Nemo Solutions",
       "cover": "/assets/img/Partners/nemo.jpg",
+      "alt": "infogaphie-logo-agence-web-nemosolutions",
       "description": "Solution digitale pour votre entreprise : Création, mise à jour, dépannage de votre site Internet vitrine ou e-commerce",
       "type": "informatique",
       "link": "https://www.nemosolutions.fr"
@@ -137,6 +138,7 @@
     {
       "name": "CA Sallois",
       "cover": "/assets/img/Partners/casallois.png",
+      "alt": "infographie-logo-casallois-football-club",
       "description": "Remy's Aux Verts est partnenaire maillot du Club de football de Salles",
       "type": "Sportif",
       "link": "https://casallois.footeo.com/"

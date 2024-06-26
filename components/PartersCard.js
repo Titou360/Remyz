@@ -2,14 +2,13 @@
 import Image from 'next/image';
 
 
-
 const PartnersCard = ({ data }) => {
-  const { name, cover, description, type } = data;
+  const { name, cover, description, type, alt } = data;
   return (
     <div className="grid h-auto place-items-center rounded-lg p-6 lg:overflow-visible">
       <div className="relative flex w-3/4 xs:w-full max-w-[48rem] flex-row lg:flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md lg:items-center">
         <div className="relative w-2/5 lg:w-1/4 lg:h-1/2 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
-          <Image src={cover} width={150} height={150} alt="image" className="object-cover w-full h-full" />
+          <Image src={cover} width={150} height={150} alt={alt} className="object-cover w-full h-full" />
           {/* Black Friday Mega Offer */}
           {/* <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-75 rounded-xl">
                     <h2 className="text-4xl font-bold text-center"> Black Friday <br /> 
