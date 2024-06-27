@@ -9,7 +9,7 @@ const Copyrights = () => {
       <span className="lg:text-center lg:!text-xs text-light">
         Pensé & construit avec ❤️ par
         <Link className="text-nemo px-1 underline underline-offset-2 lg:!text-s" href="https://www.nemosolutions.fr/" target="_blank">
-          NEMO Solutions
+          Nemo Solutions 🐙
         </Link>
       </span>
     </div>

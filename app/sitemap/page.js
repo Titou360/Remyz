@@ -16,12 +16,12 @@ const page = () => {
               </Link>
             </li>
             <li>
-              <Link href="/saintmagne" className="">
+              <Link href="/sitemap/saint-magne" className="">
                 Jardinier à Saint-Magne
               </Link>
             </li>
             <li>
-              <Link href="/salles" className="">
+              <Link href="/sitemap/salles" className="">
                 Jardinier à Salles
               </Link>
             </li>

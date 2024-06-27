@@ -7,13 +7,14 @@ import SimpleSlider from '@/components/simpleSlider';
 
 export default function Home() {
   return (
-    <main className="w-full h-full bg-light dark:bg-darky">
-      <Hero />
-      <About />
-      <Features />
-      <Xp />
-      <SimpleSlider />
-      <Catchment />
-    </main>
+   <main className="w-full h-full bg-light dark:bg-darky">
+        <Hero />
+        <About />
+        <Features />
+        <Xp />
+        <SimpleSlider />
+        <Catchment />
+      </main>
+
   );
 }

@@ -1,12 +1,13 @@
 'use client';
+import Breadcrumbs from '@/components/Breadcrumds';
 import { ArrowIcon } from '@/components/Icons';
 import SocialShare from '@/components/SocialShare';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import Button from '../../components/Buttton';
-import SeoImage from '../../public/assets/img/SEO/Infographie-Remyz-aux-verts-jardinier-salles.png';
+import Button from '../../../components/Buttton';
+import SeoImage from '../../../public/assets/img/SEO/Infographie-Remyz-aux-verts-jardinier-salles.png';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,10 @@ const Page = () => {
   return (
     <>
       <Helmet>
-        <title>RemyZ Aux Verts : Votre jardinier à Salles</title>
+        <title>RemyZ Aux Verts : Votre Jardinier, Entretien d&apos;Espaces Verts à Salles</title>
         <meta
           name="description"
-          content="Remy'z Aux Verts, jardinier à Salles, j'entretiens tous vos espaces verts : tonte, taille, gestion des déchets verts"
+          content="Remy'z Aux Verts, Jardinier à Salles, J'entretiens Tous Vos Espaces Verts : Tonte, Taille, Gestion des déchets verts"
         />
         <meta property="og:title" content="Remy'Z Aux Verts | Votre jardinier à Salles" />
         <meta
@@ -40,20 +41,22 @@ const Page = () => {
       <section id="sitemap" className="w-full pt-14 flex flex-col items-center bg-light dark:bg-darky">
         <div className="w-full flex flex-col items-center justify-center gap-6 my-8">
           {/* H1 desktop */}
-          <h1 className="lg:hidden text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
-            Remy&apos;z aux Verts : Jardinier à Salles
-          </h1>
+          <span className="lg:hidden text-5xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
+            Remy&apos;z aux Verts<h1>Jardinier à Salles</h1>
+          </span>
           {/* H1 mobile */}
-          <h1 className="hidden lg:block lg:text-4xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
+          <span className="hidden lg:block lg:text-4xl text-primary dark:text-darkModePrimary capitalize text-center my-4 font-Spring">
             Remy&apos;z aux Verts
-            <br /> Jardinier à Salles
-          </h1>
+            <br />
+            <h1>Jardinier à Salles</h1>
+          </span>
         </div>
 
         <div className="w-5/6 lg:w-[95%] h-auto mx-auto bg-white rounded-t-lg border border-1 border-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="m-12 lg:m-4">
+            <Breadcrumbs />
             <p className="text-center">
-              <span className="font-bold text-xl">Vous êtes à la recherche d’un jardinier professionnel reconnu à Salles ?</span>
+              <span className="font-bold text-2xl">Vous êtes à la recherche d’un jardinier professionnel reconnu à Salles ?</span>
               <br />
               <br />
               <span className="text-xl">Ne cherchez pas plus loin ! Vous êtes sur le bon site Internet !</span>
@@ -111,6 +114,10 @@ const Page = () => {
                 <br />
                 Il faut pouvoir compter sur un jardinier professionnel, équipé avec du matériel de haute qualité et avec des compétences accrues dans
                 ce domaine.
+                <br />
+                Par manque de temps ou d&apos;envie, si l&apos;équipement nécessaire vous est manquant ou bien tout simplement vous n&apos;avez plus
+                la force d&apos;entretenir vos espaces verts, comptez sur &nbsp;
+                <span className="text-primary font-Spring text-2xl">Rémy&apos;Z Aux Verts</span>
               </p>
             </div>
             <div className="mt-12 flex items-center justify-center">
